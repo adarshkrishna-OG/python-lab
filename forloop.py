@@ -1,3 +1,12 @@
-li=[1,2,3,4,5,6,7,8]
-for i in li:
-    print(i)
+str=input("enter a string:")
+word = {}
+for char in str:
+    if char in word:
+        word[char] += 1
+    else:
+        word[char] = 1
+print("character frequency:")
+for char,count in word.items():
+    print(f"{char}:{count}")
+
+
